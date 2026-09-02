@@ -48,7 +48,7 @@
    - **語言要求**：摘要必須翻譯為繁體中文。
 
 ### Step 3: 資料庫寫入 - `portal_news`
-- **資料庫**：`postgresql://upvnbd:pw4upvnbd@172.16.1.11:2665/UPVN_INTEL_HUB`
+- **資料庫**：`postgresql://USER:PASSWORD@HOST:PORT/UPVN_INTEL_HUB (set via DATABASE_URL / env; do not commit credentials)`
 - **目標表**：`public.portal_news`
 - **寫入策略**：若 `publish_date` 與 `category_id` 已存在對應紀錄，請先刪除該紀錄後再寫入，無需詢問。
 - **欄位映射**：
